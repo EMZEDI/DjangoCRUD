@@ -3,6 +3,11 @@ from employee.forms import ProductForm
 from employee.models import Product
 
 
+def intro(request):
+    prodc = Product.objects.all()
+    return render(request, 'intro.html', {'prodc': prodc})
+
+
 # Create your views here.
 def emp(request):
     if request.method == "POST":
@@ -19,26 +24,26 @@ def emp(request):
 
 
 def show(request):
-    employees = Product.objects.all()
-    return render(request, "show.html", {'employees': employees})
+    prod = Product.objects.all()
+    return render(request, "show.html", {'prods': prod})
 
 
 def edit(request, id):
-    employee = Product.objects.get(id=id)
-    return render(request, 'edit.html', {'employee': employee})
+    prod = Product.objects.get(id=id)
+    return render(request, 'edit.html', {'prod': prod})
 
 
 def update(request, id):
-    employee = Product.objects.get(id=id)
-    form = ProductForm(request.POST, instance=employee)
+    prod = Product.objects.get(id=id)
+    form = ProductForm(request.POST, instance=prod)
     if form.is_valid():
         form.save()
-        return redirect("/show")
+        return redirect('/show')
 
-    return render(request, 'edit.html', {'employee': employee})
+    return render(request, 'edit.html', {'prod': prod})
 
 
 def destroy(request, id):
-    employee = Product.objects.get(id=id)
-    employee.delete()
-    return redirect("/show")
+    prod = Product.objects.get(id=id)
+    prod.delete()
+    return redirect('/show')

@@ -3,9 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Index</title>
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'static/style.css' %}"/>
+    <title>Edit</title>
 </head>
 <body>
 <form method="POST" class="post-form" action="/emp">
@@ -31,7 +29,7 @@
     </div>
   </div>
     <div class="form-group row">
-    <label class="col-sm-2 col-form-label">Product price:</label>
+    <label class="col-sm-2 col-form-label">Product Price:</label>
     <div class="col-sm-4">
       {{ form.price }}
     </div>

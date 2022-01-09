@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+</head>
+<body>
+
+<h1>Welcome to the inventory website</h1>
+<p>
+This website is designed to do basic CRUD operations for the Shopify backend development challenge :]
+<br><br>
+Here you can find the list of all the products, and you can choose an action to perform</p>
+<table class="table table-striped table-bordered table-sm">
+    <thead class="thead-dark">
+    <tr>
+        <th>--Product name--</th>
+        <th>--Product Description--</th>
+        <th>--Product Price--</th>
+        <th>--Actions--</th>
+    </tr>
+    </thead>
+    <tbody>
+{% for p in prodc %}
+    <tr>
+        <td>{{ p.name }}</td>
+        <td>{{ p.description }}</td>
+        <td>{{ p.price }}</td>
+        <td>
+            <a href="/edit/{{ p.id }}"><span class="glyphicon glyphicon-pencil" >Edit</span></a>
+            <a href="/delete/{{ p.id }}">Delete</a>
+            <br>
+        </td>
+    </tr>
+{% endfor %}
+    </tbody>
+</table>
+<br><br><br>
+<center><a href="/emp" class="btn btn-primary">Add New Record</a></center>
+</body>
+</html>
