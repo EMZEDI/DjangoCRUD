@@ -10,4 +10,7 @@ urlpatterns = [
     path('edit/<int:id>', views.edit),
     path('update/<int:id>', views.update),
     path('delete/<int:id>', views.destroy),
+    path('downloadall/', views.download_all_file),
+    path('downloadsingle', views.download_single),
+    path('downloadNoHt/', views.download_all, name='download')
 ]

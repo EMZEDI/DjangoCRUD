@@ -1,0 +1,4 @@
+add the style bootstrap here - download bootstrap the online url
+get to fetch data, diff fields to process -> post or get
+cross side request -> someone can break the system its good for security - css to change the presentation of the data on html left right image everything internal class
+have to add style = "container" color red / size - diff between class and id, id is unique and class can be repeated, class is some css information

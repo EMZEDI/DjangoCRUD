@@ -1,6 +1,10 @@
+import mimetypes
+import os
+from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from employee.forms import ProductForm
 from employee.models import Product
+import pandas as pd
 
 
 def intro(request):
@@ -47,3 +51,31 @@ def destroy(request, id):
     prod = Product.objects.get(id=id)
     prod.delete()
     return redirect('/show')
+
+
+def download_all(request):
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    df = pd.DataFrame(Product.objects.all().values())
+    df.reset_index(inplace=True)
+    df.to_csv('output.csv', index=False)
+    filename = "output.csv"
+    filepath = BASE_DIR + "/output.csv"
+    # Open the file for reading content
+    path = open(filepath, 'r')
+    # Set the mime type
+    mime_type, _ = mimetypes.guess_type(filepath)
+    # Set the return value of the HttpResponse
+    response = HttpResponse(path, content_type=mime_type)
+    # Set the HTTP header for sending to browser
+    response['Content-Disposition'] = "attachment; filename=%s" % filename
+    # Return the response value
+    return response
+
+
+def download_all_file(request):
+    # Load the template
+    return render(request, 'file.html')
+
+
+def download_single(request):
+    return None
