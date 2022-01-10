@@ -3,7 +3,7 @@ from django.urls import path
 from employee import views
 
 urlpatterns = [
-    path('', views.intro),
+    path('', views.show),
     path('admin/', admin.site.urls),
     path('emp', views.emp),
     path('show', views.show),
@@ -11,6 +11,7 @@ urlpatterns = [
     path('update/<int:id>', views.update),
     path('delete/<int:id>', views.destroy),
     path('downloadall/', views.download_all_file),
-    path('downloadsingle', views.download_single),
-    path('downloadNoHt/', views.download_all, name='download')
+    path('downloadsingle/<int:id>', views.download_single_file),
+    path('downloadNoHt/', views.download_all, name='download'),
+    path('downloadNoHtS/<int:id>', views.download_single, name='downloadS')
 ]
