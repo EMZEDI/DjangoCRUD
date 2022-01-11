@@ -38,7 +38,6 @@ def update(request, id):
     if form.is_valid():
         form.save()
         return redirect('/show')
-
     return render(request, 'edit.html', {'prod': prod})
 
 
