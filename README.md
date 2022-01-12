@@ -9,4 +9,4 @@ Download the reposiroty and place it into your desktop and name it <b>djangoProj
 5- When you enter the project, wait for a minute or so, to make sure pycharm installs everything.<br>
 6- Go to the terminal and type <code> chmod u+x run.sh </code>.<br>
 7- Last step, in terminal type <code> ./run.sh </code>. <br>
-8- Wait until pycharm does everything for you. You will see a link after <b>Starting development server at</b>. Click the link and you are good to go!
+8- Wait until pycharm does everything for you. You will see a link after <b><code>Starting development server at</b></code>. Click the link and you are good to go!
