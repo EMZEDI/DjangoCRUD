@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path
-from employee import views
+from prod import views
 
 urlpatterns = [
     path('', views.show),

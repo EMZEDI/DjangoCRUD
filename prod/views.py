@@ -2,8 +2,8 @@ import mimetypes
 import os
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
-from employee.forms import ProductForm
-from employee.models import Product
+from prod.forms import ProductForm
+from prod.models import Product
 import pandas as pd
 
 
