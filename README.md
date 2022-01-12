@@ -13,7 +13,7 @@ Download the repository and place it into your desktop and name it <b>djangoProj
 9- When you are done checking the website, you can press CONTROL + C on the same terminal tab as before to stop the server.
 
 # Functionality of the website
-1- Add inventory items that have name, quantity, and price.
-2- CRUD functionality which lets you edit the inventory items and update them as well as deleting them.
-3- You can download the information of each inventory item or all of the items as a csv file!
+1- Add inventory items that have name, quantity, and price. <br>
+2- CRUD functionality which lets you edit the inventory items and update them as well as deleting them.<br>
+3- You can download the information of each inventory item or all of the items as a csv file!<br>
 # ENJOY!!!
