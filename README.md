@@ -8,12 +8,12 @@ Download the repository and place it into your desktop and name it <b>djangoProj
 4- (unzip the repo folder) And choose repository folder in the desktop as your project location (which you have to choose on top of the page) And make the project!! You have to choose the "Create Project using the existing sources" option.<br>
 5- When you enter the project, wait for a minute or so, to make sure pycharm installs everything.<br><br>
 <b>If you have windows operating system:<br>
-        TYPE the following lines of commands one at a time and press enter:<br>
+        TYPE the following lines of commands one at a time and press enter:<br><code>
         python -m pip install --upgrade pip<br>
         pip install -r requirements.txt<br>
         python manage.py makemigrations<br>
         python manage.py migrate<br>
-        python manage.py runserver</b><br><br>
+        python manage.py runserver</b><br><br></code>
     <b>ELSE:<br>
     Go to the terminal and type <code> chmod u+x run.sh </code>.<br>
     Last step, in terminal type <code> ./run.sh </code>. <br><br></b>
