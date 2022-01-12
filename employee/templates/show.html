@@ -15,7 +15,7 @@ Here you can find the list of all the products, and you can choose an action to 
     <thead class="thead-dark">
     <tr>
         <th>--Product name--</th>
-        <th>--Product Description/Quantity/Date--</th>
+        <th>--Product Quantity--</th>
         <th>--Product Price--</th>
         <th>--Actions--</th>
     </tr>
@@ -24,7 +24,7 @@ Here you can find the list of all the products, and you can choose an action to 
 {% for prod in prods %}
     <tr>
         <td>{{ prod.name }}</td>
-        <td>{{ prod.description }}</td>
+        <td>{{ prod.quantity }}</td>
         <td>{{ prod.price }}</td>
         <td>
             <a href="/edit/{{ prod.id }}"><span class="glyphicon glyphicon-pencil" >---Edit---</span></a>
