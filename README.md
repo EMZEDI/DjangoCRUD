@@ -3,9 +3,9 @@ To run the website and use it, you have to make sure that you have python 3.9 in
 To make sure, do the following tasks:
 Download the repository and place it into your desktop and name it <b>djangoProject</b> <br>
 1- install Pycharm Community version from here: https://www.jetbrains.com/pycharm/download <br>
-2- Open pycharm and create a new project using the button on the right top of the page.<br>
-3- Make sure the python version used is 3.7 or above (3.9 recommended) make sure to check the button where it says <b>New environment using: Virtualenv</b> along with the project.<br>
-4- Choose the repository folder in the desktop as your project folder And make the project!! You have to choose the "Create Project using the existing sources" option.<br>
+2- Open pycharm and create a new project.<br>
+3- Make sure the python version used is 3.7 or above (3.9 recommended) make sure to mark the button where it says <b>New environment using: Virtualenv</b> along with the project.<br>
+4- (unzip the repo folder) And choose repository folder in the desktop as your project location (which you have to choose on top of the page) And make the project!! You have to choose the "Create Project using the existing sources" option.<br>
 5- When you enter the project, wait for a minute or so, to make sure pycharm installs everything.<br><br>
 <b>if you have windows operating system:<br>
         TYPE the following lines of commands one at a time and press enter:<br>
