@@ -1,6 +1,7 @@
 # Welcome to my CRUD website documentation! 
-To run the website and use it, you have to make sure that you have python 3.9 installed:
+To run the website and use it, you have to make sure that you have python 3.9 installed:<br>
 To make sure, do the following tasks:
+<h3>This approach may take a bit long but it gives you access to all the files and you can work with the built-in terminal of PyCharm</h3><br>
 Download the repository and place it into your desktop and name it <b>djangoProject</b> <br>
 1- Install Pycharm Community version from here: https://www.jetbrains.com/pycharm/download <br>
 2- Open pycharm and create a new project.<br>
